@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(back.jpg);
+    min-height: 100vh;
+}
+.main-bar{
+box-shadow: 0 10px 30px;
+width: 40vh;
+height: 100vh;
+padding-top: 2.5cm;
+backdrop-filter: blur(15px);
+background-color: rgb(255, 255, 255,0.2);
+
+}
+.main-bar ul {
+    
+    list-style: none;
+    
+}
+.main-bar ul li a{
+    transition: 0.2s linear;
+    text-decoration: none;
+    padding: 15px;
+    color: aliceblue;
+    display: block;
+    text-transform: capitalize;
+}
+.fa-angle-right{
+    position: absolute;
+    right: 20px;
+    
+}
+.fa-angle-right:hover{
+    color: rgb(252, 0, 0);
+    font-weight: 800px;
+}
+.main-bar ul li a:hover{
+    background-color: rgb(226, 43, 198);
+    
+}
+.fas{
+    margin-left:10px;
+    margin-right: 10px;
+}
+.sub-bar{
+    background-color: rgb(5, 5, 5,0.5);
+    display: none;
+    
+}
+.sub-bar ul li a{
+
+    padding-left: 30px;
+}
+.rotate{
+    transform: rotate(90deg);
+}

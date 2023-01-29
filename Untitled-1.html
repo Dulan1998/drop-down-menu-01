@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu- click base</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main-bar">
+    <ul>
+        <li><a href="#"><i class="fas fa-desktop"></i>dashboard</a></li>
+        <li><a href="#" class="app" ><i class="fas fa-table"></i>table<i class="fa-solid fa-angle-right dropdown"></i></a>
+            <div class="sub-bar">
+                <ul>
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fas fa-th"></i>forms</a></li>
+        <li><a href="#" class="app"><i class="fas fa-cogs"></i>settings<i class="fa-solid fa-angle-right dropdown"></i></a>
+            <div class="sub-bar">
+                <ul>
+                    <li><a href="#">settings 1</a></li>
+                    <li><a href="#">settings 2</a></li>
+                    <li><a href="#">settings 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fas fa-info-circle"></i>about</a></li>
+    </ul>
+    
+   </div>
+   <script type="text/javascript">
+    $(document).ready(function(){
+        $('.app').click(function(){
+            $(this).next('.sub-bar').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+
+   </script>
+</body>
+</html>
